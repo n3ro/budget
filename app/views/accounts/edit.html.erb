@@ -1,0 +1,21 @@
+<div class="post">
+<h1 class="title">Editing account</h1> 
+<p class="byline">id: <%= @account.id %> - Created: <%= @account.created_at %> Last Update: <%= @account.updated_at %></p>
+<div class="entry">
+
+
+<p id="notice"><%= notice %></p>
+<br />
+
+<%= render 'form' %>
+
+<p>
+<%= link_to 'Show', @account %> |
+<%= link_to 'Back', accounts_path %>
+</p>
+
+<br />
+
+</div>
+</div>
+

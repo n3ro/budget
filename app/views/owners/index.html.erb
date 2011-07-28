@@ -1,0 +1,37 @@
+<div class="post">
+<h1 class="title">Listing owners</h1>
+
+<p class="byline"><%= @owners.size %> owners</p>
+
+<div class="entry">
+
+<p id="notice"><%= notice %></p>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+
+<% @owners.each do |owner| %>
+  <tr>
+    <td><%= owner.name %></td>
+    <td><%= owner.age %></td>
+    <td><%= link_to 'Show', owner %></td>
+    <td><%= link_to 'Edit', edit_owner_path(owner) %></td>
+    <td><%= link_to 'Destroy', owner, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<p>
+<%= link_to 'New', new_owner_path %>
+
+</p>
+
+
+  </div>
+  </div>
+

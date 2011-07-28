@@ -1,0 +1,56 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Soothing by Free CSS Templates</title>
+<%= javascript_include_tag :defaults %>
+<%= stylesheet_link_tag 'default' %>
+<%= stylesheet_link_tag 'web20' %>
+</head>
+<body>
+<div id="wrapper">
+<!-- start header -->
+<div id="header">
+	<div id="logo">
+		<h1><a href="#"><span>Soothing</span></a></h1>
+		<p>Designed By Free CSS Templates</p>
+	</div>
+	<div id="menu">
+		<ul id="main">
+			<li class="current_page_item"><%= link_to 'Accounts', accounts_path %></li>
+			<li> <%= link_to 'Expenses', expenses_path %></li>
+			<li><%= link_to 'Owners', owners_path %></li>
+			<li><%= link_to 'Expense Types', expense_types_path %></li>
+			<li><%= link_to 'Account Types', account_types_path %></li>
+		</ul>
+	</div>
+	
+</div>
+<!-- end header -->
+	<!-- start page -->
+	<div id="page">
+		<div id="sidebar1" class="sidebar">
+			<ul>
+				<li>
+					<h2> Something</h2>
+					<ul>
+              <li> not used</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- start content -->
+		<div id="content">
+
+<%= yield %>
+		</div>
+		<!-- end content -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end page -->
+</div>
+<div id="footer">
+	<p class="copyright">&copy;&nbsp;&nbsp;2009 All Rights Reserved &nbsp;&bull;&nbsp; Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,34 @@
+<div class="post">
+<h1 class="title">Expense</h1>
+<p class="byline">id: <%= @expense.id %> - Created: <%= @expense.created_at %></p>
+
+<div class="entry">
+
+<p id="notice"><%= notice %></p>
+
+<p>
+ <b>Amount:</b>
+  <%= @expense.amount.to_currency %> 
+</p>
+
+<p>
+  <b>Account:</b>
+  <%= link_to @expense.account.owner.name + " - " + @expense.account.account_type.name , account_path(@expense.account) %>
+</p>
+
+<p>
+  <b>Expense type:</b>
+  <%= @expense.expense_type.name %>
+</p>
+
+
+
+ <p> 
+<%= link_to 'Edit', edit_expense_path(@expense), :class => 'more'%> | 
+<%= link_to 'Back', expenses_path, :class => 'more' %>
+</p>
+<br />
+
+  </div>
+  </div>
+
