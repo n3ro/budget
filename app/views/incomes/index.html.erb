@@ -1,0 +1,34 @@
+<div class="post">
+<h1 class="title">Listing incomes</h1>
+<p class="byline"><%= @incomes.size %> incomes</p>
+<div class="entry">
+
+<p id="notice"><%= notice %></p>
+<br />
+
+<table>
+  <tr>
+    <th>Account</th>
+    <th>Amount</th>
+  </tr>
+
+<% @incomes.each do |income| %>
+  <tr>
+    <td><%= income.account.owner.name %></td>
+    <td><%= income.amount %></td>
+    <td><%= link_to 'Show', income %></td>
+    <td><%= link_to 'Edit', edit_income_path(income) %></td>
+    <td><%= link_to 'Destroy', income, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+ <p class="links">
+<%= link_to 'New', new_income_path %>
+
+</p>
+<br />
+
+  </div>
+  </div>
+
