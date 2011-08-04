@@ -53,7 +53,7 @@ class ExpensesController < ApplicationController
     @expense = Expense.new(params[:expense])
 
     respond_to do |format|
-      if @expense.save && Account.debit(@expense.account, @expense.amount) #if account can spend and the debit is succesfully saved
+      if @expense.save && Account.debit(@expense) #if account can spend and the debit is succesfully saved
         flash[:notice] = "Expense of #{@expense.amount} succesfully saved."
         format.html { redirect_to(@expense) }
         format.xml  { render :xml => @expense, :status => :created, :location => @expense }

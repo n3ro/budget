@@ -15,3 +15,5 @@ Expense.create :id => 1, :amount => 1200, :account_id => 1, :expense_type_id => 
 Expense.create :id => 2, :amount => 200, :account_id => 1, :expense_type_id => 2
 
 Income.create :id => 1, :amount => 1200, :account_id => 1
+
+Record.create :id => 1, :account_id => 1, :debit => true, :trans_id => 1, :before => 2000, :amount => 1200, :after => 800 

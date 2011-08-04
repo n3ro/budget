@@ -1,5 +1,5 @@
 Pbudget::Application.routes.draw do
-  resources :transactions
+  resources :records
 
   resources :incomes
 
