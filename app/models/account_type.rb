@@ -1,3 +1,3 @@
 class AccountType < ActiveRecord::Base
-  has_one :account
+  has_many :account
 end

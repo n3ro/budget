@@ -23,7 +23,7 @@ class ExpensesController < ApplicationController
 
   def show_account
     @expenses = Expense.where :account_id =>  params[:id]
-    @total_expenses = number_to_currency(Expense.total_expenses params[:id]) #fixme: this sucks!... 2 queries? cme'on
+    @total = Expense.total @expenses
 
     respond_to do |format|
       format.html # show.html.erb
@@ -53,8 +53,9 @@ class ExpensesController < ApplicationController
     @expense = Expense.new(params[:expense])
 
     respond_to do |format|
-      if @expense.save
-        format.html { redirect_to(@expense, :notice => 'Expense was successfully created.') }
+      if @expense.save && Account.debit(@expense.account, @expense.amount) #if account can spend and the debit is succesfully saved
+        flash[:notice] = "Expense of #{@expense.amount} succesfully saved."
+        format.html { redirect_to(@expense) }
         format.xml  { render :xml => @expense, :status => :created, :location => @expense }
       else
         format.html { render :action => "new" }

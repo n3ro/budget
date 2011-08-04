@@ -16,7 +16,7 @@
 
 <% @expenses.each do |expense| %>
   <tr>
-    <td><%= expense.amount.to_currency  %></td>
+    <td><%= expense.amount %></td>
     <td><%= expense.account.owner.name %></td>
     <td><%= expense.expense_type.name %></td>
     <td><%= link_to 'Show', expense %></td>

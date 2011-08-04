@@ -2,14 +2,16 @@ class Money
   include ActionView::Helpers::NumberHelper
   include Comparable
 
-  attr_reader :amount, :currency
+  attr_reader :value
+
   EXCHANGE_RATES = { 
     "ARS_TO_VEF" => 1.03893,
     "ARS_TO_USD" => 1.03893 
   }
 
-  def initialize(amount, currency = "ARS")
-    @amount, @currency = amount, currency
+  def initialize(value)
+    @amount = value
+    @currency = "ARS"
   end
 
   def to_currency
@@ -40,4 +42,5 @@ class Money
       amount <=> other_money.exchange_to(currency).amount
     end
   end
+
 end

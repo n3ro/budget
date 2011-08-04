@@ -19,7 +19,7 @@
   <tr>
     <td><%= account.owner.name %></td>
     <td><%= account.account_type.name %></td>
-    <td><%= account.balance.to_currency %></td>
+    <td><%= account.balance %></td>
     <td><%= link_to 'Show', account_url(account) %></td>
     <td><%= link_to 'Expenses', acc_expense_url(:id => account) %></td>
     <td><%= link_to 'Edit', edit_account_path(account) %></td>

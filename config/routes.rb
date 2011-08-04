@@ -1,4 +1,8 @@
 Pbudget::Application.routes.draw do
+  resources :transactions
+
+  resources :incomes
+
   resources :expenses
 
   resources :accounts
