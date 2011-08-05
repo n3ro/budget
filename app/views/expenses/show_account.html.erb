@@ -1,11 +1,7 @@
-<div class="post">
-<h1 class="title">Listing expenses</h1>
+<p><%= @expenses.size %> expenses for <%= @expenses[0].account.owner.name %>'s <%= @expenses[0].account.account_type.name %> account </p>
 
-<p class="byline"><%= @expenses.size %> expenses for <%= @expenses[0].account.owner.name %>'s <%= @expenses[0].account.account_type.name %> account </p>
 
-<div class="entry">
-
-<p id="notice"><%= notice %></p>
+<p><%= notice %></p>
 
 <table>
   <tr>
@@ -33,8 +29,4 @@
  <p> 
 <%= link_to 'New', new_expense_path %>
 </p>
-<br />
-
-  </div>
-  </div>
 

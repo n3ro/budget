@@ -1,17 +1,15 @@
-<div class="post">
-<h1 class="title">Listing Expense Types</h1>
+<p><%= @expense_types.size %> expense type(s)</p>
 
-<p class="byline"><%= @expense_types.size %> expense type(s)</p>
 
-<div class="entry">
+<p><%= notice %></p>
 
-<p id="notice"><%= notice %></p>
-
-<table>
+<table id="tabledata">
+<thead>
   <tr>
     <th>Name</th>
     <th>Description</th>
   </tr>
+</thead>
 
 <% @expense_types.each do |expense_type| %>
   <tr>
@@ -24,13 +22,6 @@
 <% end %>
 </table>
 
-<br />
-
 <p>
 <%= link_to 'New', new_expense_type_path %>
 </p>
-
-
-  </div>
-  </div>
-

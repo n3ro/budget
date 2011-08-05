@@ -1,22 +1,22 @@
-<h1>Listing records</h1>
-
-<table>
+<table id="tabledata">
+<thead>
   <tr>
     <th>Id</th>
-    <th>Account</th>
-    <th>Trasaction</th>
+    <th>Acc</th>
+    <th>Ref</th>
     <th>Id</th>
     <th>Before</th>
     <th>Amount</th>
     <th>After</th>
   </tr>
+</thead>
 
 <% @records.each do |record| %>
   <tr>
     <td> <%= record.id %> </td>
     <td> <%= record.account_id %> </td>
     <td> <%= record.trans_id %> </td>
-    <td> <%= record.debit %> </td>
+    <td> <%= record.debit ? 'debit' : 'credit' %> </td>
     <td> <%= record.before %> </td>
     <td> <%= record.amount%> </td>
     <td> <%= record.after %> </td>

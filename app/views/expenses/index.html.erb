@@ -1,18 +1,16 @@
-<div class="post">
-<h1 class="title">Listing expenses</h1>
-<p class="byline"><%= @expenses.size %> expenses</p>
-<div class="entry">
+<p><%= @expenses.size %> expenses</p>
 
-<p id="notice"><%= notice %></p>
-<br />
+<p><%= notice %></p>
 
 
-<table>
+<table id="tabledata">
+<thead>
   <tr>
     <th>Amount</th>
     <th>Account</th>
     <th>Expense type</th>
   </tr>
+</thead>
 
 <% @expenses.each do |expense| %>
   <tr>
@@ -29,10 +27,5 @@
 
  <p class="links">
 <%= link_to 'New', new_expense_path, :class => 'more' %>
-
 </p>
-<br />
-
-  </div>
-  </div>
 

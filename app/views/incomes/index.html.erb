@@ -1,16 +1,14 @@
-<div class="post">
-<h1 class="title">Listing incomes</h1>
-<p class="byline"><%= @incomes.size %> incomes</p>
-<div class="entry">
+<p><%= @incomes.size %> incomes</p>
 
-<p id="notice"><%= notice %></p>
-<br />
+<p><%= notice %></p>
 
-<table>
+<table id="tabledata">
+<thead>
   <tr>
     <th>Account</th>
     <th>Amount</th>
   </tr>
+</thead>
 
 <% @incomes.each do |income| %>
   <tr>
@@ -25,10 +23,4 @@
 
  <p class="links">
 <%= link_to 'New', new_income_path %>
-
 </p>
-<br />
-
-  </div>
-  </div>
-

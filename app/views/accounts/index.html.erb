@@ -1,12 +1,8 @@
-<div class="post">
-<h1 class="title">Listing Accounts</h1>
-<p class="byline"><%= @accounts.size %> account(s)</p>
-<div class="entry">
+<p><%= @accounts.size %> account(s)</p>
 
-<p id="notice"><%= notice %></p>
-<br />
 
-<table>
+<table id="tabledata">
+<thead>
   <tr>
     <th>Owner</th>
     <th>Account type</th>
@@ -14,6 +10,7 @@
     <th>Actions</th>
     <th colspan="4" align="center">Actions</th>
   </tr>
+</thead>
 
 <% @accounts.each do |account| %>
   <tr>
@@ -34,8 +31,5 @@
  <%= link_to 'New', new_account_path, :class => 'more' %>
 </p>
 
-<br />
 
-</div>
-</div>
 

@@ -1,17 +1,17 @@
-<div class="post">
-<h1 class="title">Listing owners</h1>
 
-<p class="byline"><%= @owners.size %> owners</p>
+<p><%= @owners.size %> owners</p>
 
-<div class="entry">
 
-<p id="notice"><%= notice %></p>
+<p><%= notice %></p>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Age</th>
-  </tr>
+<table id="tabledata">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th colspan="3">Actions</th>
+    </tr>
+ </thead>
 
 <% @owners.each do |owner| %>
   <tr>
@@ -24,14 +24,9 @@
 <% end %>
 </table>
 
-<br />
 
 <p>
 <%= link_to 'New', new_owner_path %>
 
 </p>
-
-
-  </div>
-  </div>
 
