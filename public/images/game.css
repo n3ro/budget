@@ -1,0 +1,196 @@
+#wrapper {
+  width: 960px;
+  margin: 10px auto;
+  height: auto;
+  min-height: 500px;
+}
+
+#content {
+  border-top: 0px;
+}
+
+.column_title {
+  background: white url('../images/PbBgTitle.png') repeat-x left top;
+  border: 1px solid #1a3f53;
+  border-width: 0px 0px 1px 0px;
+}
+
+.column_title p {
+  padding: 5px 5px 5px 10px;
+  margin: 0px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.leagues {
+  min-height: 100px;
+  background-color: #fff;
+  border: 1px solid #1a3f53;
+  border-bottom: 0px;
+}
+
+.title_loader {
+  float: right;
+  display: block;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.title_loader img {
+  float: left;
+  display: block;
+}
+
+.title_loader span {
+  float: left;
+  display: block;
+  margin: 6px 10px 0px 5px;
+}
+
+.league_details {
+  background: white url('../images/league-bg.png') repeat-x left top;
+  min-height: 140px;
+  border: 1px solid #1a3f53;
+  border-width: 0 0 1px 0;
+}
+
+.league_banner {
+  float:left;
+  margin: 10px 30px;
+}
+
+.league_banner img {
+  width: 306px;
+}
+
+.league_stats {
+  float: left;
+  margin: 10px;
+  min-height: 64px;
+}
+
+.league_stats .stat_title {
+  color: #033;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.league_stats .stat_value {
+  color: #090;
+}
+
+.league_button {
+  float: right;
+  margin: 10px;
+  min-height: 64px;
+  width: 200px;
+  text-align: center;
+}
+
+.league_button input[type='button']{
+  width: 90px;
+}
+
+#bets .column {
+  float: left;
+  min-height: 100px;
+  background-color: #fff;
+  margin-right: 10px;
+  border: 1px solid #1a3f53;
+}
+
+#bets .left {
+  width: 200px;
+}
+
+#bets .middle {
+  width: 520px;
+}
+
+#bets .right {
+  width: 200px;
+}
+
+#current_round_id {
+  width: 510px;
+  margin: 5px;
+}
+
+#games {
+  margin: 5px;
+}
+
+#games h1 {
+  height: 18px;
+  color: #000;
+  margin: 0;
+  font-size: 12px;
+  padding: 2px 0 0 3px;
+  background: #fff url('../images/subtitle-bg.png') repeat-x left top;
+}
+
+#games .game_details {
+  height: 130px;
+  border-bottom: 1px solid #ddd;
+}
+
+#games .game_details .team {
+  float: left;
+  height: 100%;
+  width: 190px;
+  padding: 5px;
+}
+
+#games .game_details .team .tshirt {
+  position: relative;
+  top: 15px;
+  left: 5px;
+  z-index: 2;
+}
+
+#games .game_details .team .name {
+  position: relative;
+  background: #d8d8d8 url('../images/team-name-bg.png') repeat-x;
+  color: #333;
+  border: 1px solid #333;
+  border-bottom-width: 3px;
+  width: 145px;
+  font-size: 11px;
+  padding-top: 2px;
+  /*padding-left: 18px;*/
+  top: -11px;
+  left: 24px;
+  height: 16px;
+  z-index: 1;
+  text-align: center;
+  overflow: hidden;
+}
+
+#games .game_details .betdata {
+  float: left;
+  height: 100%;
+  width: 90px;
+  margin-left: 12px;
+  margin-top: 8px;
+}
+
+#games .game_details .betdata .widget {
+  float: left;
+  width: 40px;
+  margin-left: 3px;
+}
+
+#games .game_details .betdata .arrow {
+  width: 40px;
+  text-align: center;
+}
+
+#games .game_details .betdata .score {
+  width: 28px;
+  height: 28px;
+  background: url('../images/score-box-bg.png');
+  border: none;
+  padding: 5px;
+  text-align: center;
+}

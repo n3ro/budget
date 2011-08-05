@@ -1,0 +1,7 @@
+#bets .middle {
+  background: #fff url('../images/leagues/1/bet-bg.png') repeat-x left top;
+}
+
+#games .game_details {
+  background: #fff url('../images/leagues/1/game-bg.png') no-repeat 50% 50%;
+}

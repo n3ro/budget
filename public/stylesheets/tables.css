@@ -1,0 +1,56 @@
+#tabledata {
+  width: 100%;
+}
+
+#tabledata, th, td {
+  border-collapse: collapse;
+  border: 1px solid #fff;
+}
+
+#tabledata thead th {
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 6px 10px;
+  background-color: #6faccf;
+}
+
+#tabledata tbody td {
+  /*font-family: Verdana, Helvetica, sans-serif;*/
+  font-size: 13px;
+  padding: 5px;
+}
+
+#tabledata thead .actions {
+  width: 140px;
+  text-align: center;
+}
+
+#tabledata .center {
+  text-align: center;
+}
+
+#tabledata .right {
+  text-align: right;
+}
+
+#tabledata .blank {
+  background-color: #f8f8f8;
+}
+
+#tabledata .alternate {
+  background-color: #e5f1f4;
+}
+
+#tabledata .small {
+  width: 50px;
+}
+
+#tabledata .medium {
+  width: 100px;
+}
+
+#tabledata .large {
+  width: 150px;
+}
+
