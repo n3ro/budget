@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(:version => 20110804035858) do
 
   create_table "expenses", :force => true do |t|
     t.integer  "amount"
+    t.text     "description"
     t.integer  "account_id"
     t.integer  "expense_type_id"
     t.datetime "created_at"
@@ -44,6 +45,7 @@ ActiveRecord::Schema.define(:version => 20110804035858) do
 
   create_table "incomes", :force => true do |t|
     t.integer  "amount"
+    t.text     "description"
     t.integer  "account_id"
     t.datetime "created_at"
     t.datetime "updated_at"

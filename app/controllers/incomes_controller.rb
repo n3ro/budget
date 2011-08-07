@@ -43,8 +43,9 @@ class IncomesController < ApplicationController
     @income = Income.new(params[:income])
 
     respond_to do |format|
-      if @income.save
-        format.html { redirect_to(@income, :notice => 'Income was successfully created.') }
+      if @income.save && Account.credit(@income) #if account can spend and the debit is succesfully saved
+        flash[:notice] = "Income of #{@income.amount} succesfully saved."
+        format.html { redirect_to(@income) }
         format.xml  { render :xml => @income, :status => :created, :location => @income }
       else
         format.html { render :action => "new" }

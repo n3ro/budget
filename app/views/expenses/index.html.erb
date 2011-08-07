@@ -9,6 +9,7 @@
     <th>Amount</th>
     <th>Account</th>
     <th>Expense type</th>
+    <th>Description</th>
   </tr>
 </thead>
 
@@ -17,6 +18,7 @@
     <td><%= expense.amount %></td>
     <td><%= expense.account.owner.name %></td>
     <td><%= expense.expense_type.name %></td>
+    <td><%= expense.description %></td>
     <td><%= link_to 'Show', expense %></td>
     <td><%= link_to 'Edit', edit_expense_path(expense) %></td>
     <td><%= link_to 'Destroy', expense, :confirm => 'Are you sure?', :method => :delete %></td>

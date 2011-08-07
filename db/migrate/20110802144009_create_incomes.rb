@@ -3,6 +3,7 @@ class CreateIncomes < ActiveRecord::Migration
     create_table :incomes do |t|
 
       t.integer :amount
+      t.text :description
       t.references :account
 
       t.timestamps

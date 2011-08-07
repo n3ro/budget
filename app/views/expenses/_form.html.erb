@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :account %><br />
-    <%= select("expense", "account_id", Account.all.collect {|a| [ a.owner.name, a.id] }) %>
+    <%= select("expense", "account_id", Account.all.collect {|a| [ a.owner.name+'-'+a.account_type.name, a.id ] }) %>
   </div>
   <div class="field">
     <%= f.label :expense_type %><br />
@@ -23,6 +23,11 @@
     <%= f.label :amount %><br />
     <%= f.text_field :amount %>
   </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

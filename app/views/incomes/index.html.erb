@@ -7,6 +7,7 @@
   <tr>
     <th>Account</th>
     <th>Amount</th>
+    <th>Description</th>
   </tr>
 </thead>
 
@@ -14,6 +15,7 @@
   <tr>
     <td><%= income.account.owner.name %></td>
     <td><%= income.amount %></td>
+    <td><%= income.description %></td>
     <td><%= link_to 'Show', income %></td>
     <td><%= link_to 'Edit', edit_income_path(income) %></td>
     <td><%= link_to 'Destroy', income, :confirm => 'Are you sure?', :method => :delete %></td>

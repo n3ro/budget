@@ -24,6 +24,23 @@ class Account < ActiveRecord::Base
     end
   end
 
+  def self.credit(income)
+    # can_expense is verified before savin the expense
+    record = Record.new
+    account = Account.find income.account_id
+
+    record.account_id = income.account_id
+    record.debit = false
+    record.before = account.balance
+    account.balance += income.amount
+    record.after = account.balance
+    record.amount = income.amount
+    if account.save #FIXME: ... self explained
+      record.trans_id = income.id
+      record.save
+    end
+  end
+
   def can_spend?(amnt)
     self.balance < amnt
   end
