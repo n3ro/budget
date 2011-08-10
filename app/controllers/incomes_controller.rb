@@ -74,8 +74,17 @@ class IncomesController < ApplicationController
   # DELETE /incomes/1.xml
   def destroy
     @income = Income.find(params[:id])
-    @income.destroy
-
+    account = Account.find @income.account
+    record = Record.where(:account_id => account.id, :trans_id => @income.id, :debit => false).first
+    if !account.nil? && !@income.nil? && !record.nil?
+      account.balance -= @income.amount
+      account.save
+      @income.destroy
+      record.destroy
+      flash[:notice] = "Income of #{@income.id} has been deleted and the account #{account.id} has been restored to previos balance"
+    else
+      flash[:notice] = "Errors: #{record.errors}, #{record.errors} "
+    end
     respond_to do |format|
       format.html { redirect_to(incomes_url) }
       format.xml  { head :ok }

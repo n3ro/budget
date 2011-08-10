@@ -84,8 +84,17 @@ class ExpensesController < ApplicationController
   # DELETE /expenses/1.xml
   def destroy
     @expense = Expense.find(params[:id])
-    @expense.destroy
-
+    account = Account.find @expense.account
+    record = Record.where(:account_id => account.id, :trans_id => @expense.id, :debit => true).first
+    if !account.nil? && !@expense.nil? && !record.nil?
+      account.balance += @expense.amount
+      account.save
+      @expense.destroy
+      record.destroy
+      flash[:notice] = "Expense of #{@expense.id} has been deleted and the account #{account.id} has been restored to previos balance"
+    else
+      flash[:notice] = "Errors: #{record.errors}, #{record.errors} "
+    end
     respond_to do |format|
       format.html { redirect_to(expenses_url) }
       format.xml  { head :ok }
