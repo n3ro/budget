@@ -1,0 +1,3 @@
+echo Your branches:
+git branch
+rvm use 1.9.2@railsthree
