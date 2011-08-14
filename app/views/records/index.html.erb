@@ -1,0 +1,38 @@
+<p><%= @records.size %> transactions</p>
+
+<p><%= notice %></p>
+
+<table id="tabledata">
+<thead>
+  <tr>
+    <th>Id</th>
+    <th>Acc</th>
+    <th>Ref</th>
+    <th>Id</th>
+    <th>Before</th>
+    <th>Amount</th>
+    <th>After</th>
+    <th>Date</th>
+  </tr>
+</thead>
+
+<% @records.each do |record| %>
+  <tr>
+    <td> <%= record.id %> </td>
+    <td> <%= record.account_id %> </td>
+    <td> <%= record.trans_id %> </td>
+    <td> <%= record.debit ? 'debit' : 'credit' %> </td>
+    <td> <%= record.before %> </td>
+    <td> <%= record.amount%> </td>
+    <td> <%= record.after %> </td>
+    <td> <%= record.created_at %> </td>
+    <td><%= link_to 'Show', record %></td>
+    <td><%= link_to 'Edit', edit_record_path(record) %></td>
+    <td><%= link_to 'Destroy', record, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New', new_record_path %>

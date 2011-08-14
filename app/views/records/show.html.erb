@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<table id="tabledata">
+<thead>
+  <tr>
+    <td>Id</td> <td> <%= @record.id %> </td>
+  </tr>
+
+  <tr>
+  <td>Id</td><td> <%= @record.account_id %> </td>
+  </tr>
+
+  <tr>
+  <td>Id</td>   <td> <%= @record.trans_id %> </td>
+  </tr>
+
+  <tr>
+  <td>Id</td>  <td> <%= @record.debit ? 'debit' : 'credit' %> </td>
+  </tr>
+
+  <tr>
+  <td>Id</td>  <td> <%= @record.before %> </td>
+  </tr>
+  <tr>
+  <td>Id</td>  <td> <%= @record.amount%> </td>
+  </tr>
+
+   <tr>
+  <td>Id</td>  <td> <%= @record.after %> </td>
+  </tr>
+
+ <tr>
+  <td>Id</td>  <td> <%= @record.created_at %> </td>
+  </tr>
+</table>
+
+
+
+<%= link_to 'Edit', edit_record_path(@record) %> |
+<%= link_to 'Back', records_path %>

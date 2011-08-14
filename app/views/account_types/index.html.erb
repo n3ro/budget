@@ -1,0 +1,30 @@
+<p><%= @account_types.size %> account type(s)</p>
+
+
+<p><%= notice %></p>
+
+
+<table id="tabledata">
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+</thead>
+
+<% @account_types.each do |account_type| %>
+<tbody>
+  <tr>
+    <td><%= account_type.name %></td>
+    <td><%= account_type.description %></td>
+    <td><%= link_to 'Show', account_type %></td>
+    <td><%= link_to 'Edit', edit_account_type_path(account_type) %></td>
+    <td><%= link_to 'Destroy', account_type, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+</tbody>
+<% end %>
+</table>
+
+<p>
+<%= link_to 'New', new_account_type_path %>
+</p>

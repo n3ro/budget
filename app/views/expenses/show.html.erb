@@ -1,0 +1,26 @@
+<p>id: <%= @expense.id %> - Created: <%= @expense.created_at %></p>
+
+
+<p><%= notice %></p>
+
+<p>
+ <b>Amount:</b>
+  <%= @expense.amount %> 
+</p>
+
+<p>
+  <b>Account:</b>
+  <%= link_to @expense.account.owner.name + " - " + @expense.account.account_type.name , account_path(@expense.account) %>
+</p>
+
+<p>
+  <b>Expense type:</b>
+  <%= @expense.expense_type.name %>
+</p>
+
+
+
+ <p> 
+<%= link_to 'Edit', edit_expense_path(@expense), :class => 'more'%> | 
+<%= link_to 'Back', expenses_path, :class => 'more' %>
+</p>

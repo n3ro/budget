@@ -1,0 +1,78 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #555;
+  border: 0;
+  font: normal 10pt Arial,Helvetica,sans-serif;
+  background: #EFEFEF;
+  background: url('../images/PbBgContent.png') repeat-x top left;
+  height: 100%;
+}
+
+#header {
+  background: url('../images/PbBgHeader.png') repeat-x bottom left;
+  height: 100px;
+}
+
+#logo {
+  background: url('../images/PbHeader.png') no-repeat bottom left;
+  height: 86px;
+  width: 874px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#footer, .push {
+  clear: both;
+  height: 72px;
+}
+
+#footer {
+  font-size: 0.8em;
+  background: url('../images/PbBgFooter.png') repeat-x left top;
+  padding: 15px 15px 5px 15px;
+}
+
+#footer .content {
+  width: 760px;
+  margin: 0 auto;
+}
+
+#footer .content .social {
+  float: left;
+  width: 200px;
+}
+
+#footer .content .company {
+  float: left;
+  width: 420px;
+  text-align: right;
+  margin: 10px auto;
+  padding-right: 20px;
+}
+
+#footer .content .company p {
+  margin: 0;
+  padding-bottom: 2px;
+  color: #aaa;
+}
+
+#footer .maypun {
+  float: left;
+  padding-top: 3px;
+}
+
+.clearfix:before, .clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+} /* IE < 8 */

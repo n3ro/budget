@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  owner: 1
+  account_type: 1
+  balance: 1
+
+two:
+  owner: 1
+  account_type: 1
+  balance: 1

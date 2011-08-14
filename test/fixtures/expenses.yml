@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  amount: 1
+  account: 1
+  expense_type: 1
+
+two:
+  amount: 1
+  account: 1
+  expense_type: 1

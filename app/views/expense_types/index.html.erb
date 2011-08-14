@@ -1,0 +1,27 @@
+<p><%= @expense_types.size %> expense type(s)</p>
+
+
+<p><%= notice %></p>
+
+<table id="tabledata">
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+</thead>
+
+<% @expense_types.each do |expense_type| %>
+  <tr>
+    <td><%= expense_type.name %></td>
+    <td><%= expense_type.description %></td>
+    <td><%= link_to 'Show', expense_type %></td>
+    <td><%= link_to 'Edit', edit_expense_type_path(expense_type) %></td>
+    <td><%= link_to 'Destroy', expense_type, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<p>
+<%= link_to 'New', new_expense_type_path %>
+</p>

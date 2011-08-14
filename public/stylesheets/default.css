@@ -1,0 +1,411 @@
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 0px;
+	padding: 0;
+	background: #191919 url(images/img01.jpg) repeat-x left top;
+	text-align: justify;
+	font-family:  Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+
+h1, h2, h3 {
+	margin-top: 0;
+}
+
+h1 {
+	font-size: 1.6em;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+ul {
+}
+
+a {
+	text-decoration: none;
+	color: #333333;
+}
+
+a:hover {
+	border-bottom: none;
+}
+
+a img {
+	border: none;
+}
+
+img.left {
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+img.right {
+	float: right;
+	margin: 0 0 0 20px;
+}
+
+#header {
+	width: 960px;
+	margin: 0 auto;
+	height: 262px;
+}
+
+/* Header */
+
+#logo {
+	width: 960px;
+	height: 150px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+#logo h1, #logo p {
+	margin: 0;
+	padding-left: 100px;
+	color: #FFFFFF;
+}
+
+#logo span {
+	color: #FFFFFF;
+}
+
+#logo h1 {
+	padding: 25px 0 0 0;
+	letter-spacing: -1px;
+	text-transform: lowercase;
+	font-weight: normal;
+	font-size: 4.8em;
+}
+
+#logo p {
+	text-transform: lowercase;
+	padding: 4px 0 0 3px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 22px;
+	color: #FFFFFF;
+}
+
+#logo a {
+	border: none;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* Menu */
+
+#menu {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+	height: 62px;
+	background: url(images/img02.jpg) repeat-x left top;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 24px 0 0 0px;
+	list-style: none;
+}
+
+#menu li {
+	float: left;
+	display: inline;
+}
+
+#menu a {
+	height: 30px;
+	margin: 0;
+	padding: 20px 30px 0 30px;
+	background: url(images/img06.jpg) no-repeat right 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+}
+
+#menu a:hover {
+	color: #000000;
+}
+
+#menu .current_page_item a {
+	color: #000000;
+}
+
+/* Wrapper */
+
+#wrapper {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Page */
+
+#page {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0px;
+	background: url(images/img03.jpg) repeat-y left top;
+}
+
+#page-bg {
+}
+
+/* Latest Post */
+
+#latest-post {
+	padding: 20px;
+	border: 1px solid #E7E7E7;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 650px;
+	margin: 0px 20px 20px 20px;
+	background: #FFFFFF;
+}
+
+.post {
+	padding-bottom: 15px;
+	line-height: 200%;
+	background: url(images/img04.jpg) repeat-x left bottom;
+}
+
+.post h1 {
+	font-weight: normal;
+}
+
+.title {
+	margin: 0;
+	padding: 30px 0 4px 0px;
+	font-size: 28px;
+	font-weight: normal;
+}
+
+.title a {
+	border-bottom: none;
+	color: #000000;
+}
+
+.title a:hover {
+	border-bottom: 1px dotted #000000;
+}
+
+.byline {
+	background: #676767;
+	margin: 10px 0px 20px 0px;
+	padding: 4px 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+
+.tag {
+	padding: 0 15px;
+}
+
+.entry {
+	padding: 0px 0px;
+}
+
+.links {
+	width: 80px;
+	height: 33px;
+	background: url(images/img05.jpg) no-repeat left top;
+	text-align: right;
+	font-weight: bold;
+}
+
+.links a {
+	display: block;
+	height: 25px;
+	padding-top: 8px;
+	padding-left: 10px;
+	text-align: left;
+	color: #5E5E5E;
+}
+
+.links a:hover {
+}
+
+/* Sidebars */
+
+#sidebar1 {
+	float: left;
+	width: 230px;
+}
+
+#sidebar2 {
+	float: right;
+	width: 230px;
+}
+
+.sidebar {
+	float: left;
+	border-top: 10px solid #2C5270;
+	padding: 0;
+	color: #737373;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar li {
+	padding: 0 0 20px 0;
+}
+
+.sidebar li ul {
+	background: none;
+	padding-bottom: 20px;
+}
+
+.sidebar li li {
+	margin: 0px 15px;
+	padding: 8px 0px;
+	border-bottom: 1px #474747 dashed;
+	background: none;
+}
+
+
+.sidebar li h2 {
+	height: 26px;
+	background: #0C0C0C;
+	margin: 0 0 0 0;
+	padding: 14px 15px 0px 15px;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.sidebar a {
+	color: #BDBDBD;
+}
+
+/* Search */
+
+#searchform {
+	margin: 0;
+	padding: 0 0 20px 0;
+}
+
+#searchform br {
+	display: none;
+}
+
+#searchform h2 {
+}
+
+#s {
+	margin: 10px 0px 0 15px;
+	padding: 2px 2px;
+	width: 165px;
+	height: 18px;
+	border: 1px solid #CCCCCC;
+	background: #FFFFFF;
+	font-size: 10px;
+	color: #000000;
+}
+
+#x {
+	margin: 0;
+	padding: 2px 5px;
+	height: 25px;
+	background: #CA8186;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #CCCCCC;
+}
+/* Calendar */
+
+#calendar_wrap {
+	padding: 10px 15px;
+	text-align: center;
+}
+
+#calendar_wrap table {
+	width: 100%;
+}
+
+#calendar_wrap th {
+}
+
+#calendar_wrap td {
+}
+
+#calendar_wrap tfoot td {
+	border: none;
+}
+
+#calendar_wrap tfoot td#prev {
+	text-align: left;
+	font-weight: bold;
+	border: none;
+}
+
+#calendar_wrap tfoot td#prev a {
+	border: none;
+}
+
+#calendar_wrap tfoot td#next {
+	text-align: right;
+	font-weight: bold;
+	border: none;
+}
+
+#calendar_wrap tfoot td#next a {
+	border: none;
+}
+
+/* Footer */
+
+#footer {
+	width: 1000px;
+	height: 80px;
+	margin: 0 auto;
+	padding: 0 20px;
+	background: url(images/img03.gif) no-repeat center top;
+}
+
+#footer p {
+	margin: 0;
+	padding: 10px 0 0 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #737373;
+}
+
+#footer a {
+	color: #BDBDBD;
+}
+
+#footer .link {
+}
+
+#footer .copyright {
+}

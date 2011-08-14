@@ -1,0 +1,24 @@
+<p>id: <%= @account.id %> - Created: <%= @account.created_at %></p>
+
+<p><%= notice %></p>
+
+<p>
+  <b>Owner:</b>
+  <%= @account.owner.name %>
+</p>
+
+<p>
+  <b>Account type:</b>
+  <%= @account.account_type.name %>
+</p>
+
+<p>
+  <b>Balance:</b>
+  <%= @account.balance %>
+</p>
+
+
+<%= link_to 'Edit', edit_account_path(@account) %> |
+<%= link_to 'Back', accounts_path %>
+
+
